@@ -1,0 +1,28 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+.h1, .h2, .h3, .h4, .h5 {
+  font-family: 'Nunito', cursive;
+}
+
+.welcome-page {
+  height: 100vh;
+}
+
+.auth-page {
+  height: 100vh;
+}
+
+.not-found-page {
+  height: 100vh;
+}
+
+.navbar {
+  max-height: 45px;
+}
