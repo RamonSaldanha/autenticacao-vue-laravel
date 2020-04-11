@@ -21,7 +21,8 @@
 
 <script>
   import authMixin from '../../mixins/authMixin';
-
+  
+  // import { mapActions, mapState } from 'vuex'
   export default {
     data() {
       return {

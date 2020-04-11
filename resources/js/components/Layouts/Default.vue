@@ -7,14 +7,18 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      
       <NavigationMenu></NavigationMenu>
     </nav>
+
     <router-view></router-view>
     
   </div>
 </template>
 
 <script>
+  import store from '../../store';
+  import {mapGetters, mapState} from 'vuex';
   import NavigationMenu from './Parts/NavigationMenu';
 
   export default {
@@ -25,6 +29,10 @@
     components: {
       NavigationMenu
     },
-    
+    computed: {
+      ...mapGetters({
+                user: 'auth/user'
+            }),
+    }
   }
 </script>

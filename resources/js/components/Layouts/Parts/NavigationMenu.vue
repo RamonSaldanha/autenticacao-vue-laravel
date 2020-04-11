@@ -19,10 +19,12 @@
         <router-link class="nav-link" to="/register">Registrar</router-link>
       </li>
       <li class="nav-item" v-if="$route.meta.auth">
-        <a class="nav-link" @click="logout()">Sair</a>
+        <a class="nav-link" @click="logout()" id="logout">Sair</a>
       </li>
     </ul>
+    
   </div>
+
 </template>
 
 <script>
