@@ -53159,7 +53159,7 @@ var render = function() {
       attrs: { id: "navbarSupportedContent" }
     },
     [
-      !_vm.isAuth
+      !_vm.$route.meta.auth
         ? _c("ul", { staticClass: "navbar-nav ml-auto" }, [
             _c(
               "li",
@@ -53236,7 +53236,7 @@ var render = function() {
         "nav",
         {
           staticClass:
-            "navbar navbar-dark navbar-expand-lg fixed-top bg-dark flex-md-nowrap bg-dark position-fixed p-1"
+            "navbar navbar-dark navbar-expand-lg fixed-top bg-dark flex-md-nowrap p-2 shadow"
         },
         [
           !_vm.$route.meta.auth

@@ -11,7 +11,7 @@
     </li>
   </ul> -->
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto"v-if="!isAuth">
+    <ul class="navbar-nav ml-auto"v-if="!$route.meta.auth">
       <li class="nav-item" >
         <router-link class="nav-link" to="/login">Entrar</router-link>
       </li>

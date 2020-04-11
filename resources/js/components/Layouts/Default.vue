@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark flex-md-nowrap bg-dark position-fixed p-1">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark flex-md-nowrap p-2 shadow">
       <router-link class="navbar-brand col-sm-3 col-md-2 mr-0" v-if="!$route.meta.auth" to="/">Autenticação</router-link>
       <router-link class="navbar-brand col-sm-3 col-md-2 mr-0" v-else to="/home">Autenticação</router-link>
       <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
