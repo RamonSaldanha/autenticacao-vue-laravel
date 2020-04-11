@@ -69905,9 +69905,18 @@ router.beforeEach(function (to, from, next) {
       _store_index__WEBPACK_IMPORTED_MODULE_2__["default"].dispatch('auth/getUsetByToken', localStorage.getItem('access_token')).then(function (response) {
         if (to.meta.role != response.data.role) {
           // se não houver permissão você é redirecionado para a página inicial
-          next({
-            path: '/'
-          });
+          switch (response.data.role) {
+            case 9:
+              next({
+                path: '/admin'
+              });
+              break;
+
+            default:
+              next({
+                path: '/home'
+              });
+          }
         }
       })["catch"](function (error) {
         // se der algum erro volta pra tela de login

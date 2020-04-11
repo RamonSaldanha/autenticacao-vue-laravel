@@ -31,6 +31,7 @@ router.beforeEach((to, from, next) => {
   // console.log(store.getters['auth/token'])
   if( to.meta.auth ) {
     if( !localStorage.getItem('access_token') ) {
+      
       next({
         path: '/login',
         // query: { redirect: to.fullPath }
@@ -40,9 +41,17 @@ router.beforeEach((to, from, next) => {
       .then( (response) => {
         if (to.meta.role != response.data.role) {
           // se não houver permissão você é redirecionado para a página inicial
-          next({
-            path: '/',
-          })
+          switch( response.data.role ){
+            case 9:
+              next({
+                path: '/admin',
+              })
+              break;
+            default:
+              next({
+                path: '/home',
+              })
+          }
         }
       }).catch(error => {
         // se der algum erro volta pra tela de login
