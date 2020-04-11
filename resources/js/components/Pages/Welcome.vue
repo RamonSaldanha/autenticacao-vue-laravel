@@ -9,8 +9,13 @@
 </template>
 
 <script>
-    export default {
-        mounted() {
-        }
+  import store from '../../store';
+  import {mapGetters, mapState} from 'vuex';
+  export default {
+    computed: {
+    ...mapGetters({
+                user: 'auth/user'
+            }),
     }
+  }
 </script>

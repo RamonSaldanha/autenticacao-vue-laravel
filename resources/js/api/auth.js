@@ -12,6 +12,10 @@ export default {
     return axios.get('/api/auth/user', 
     { headers: { Authorization: `Bearer ${token}` } });
   },
+
+  logoutUser ( token ) {
+    return axios.get('/api/auth/logout', { headers: { Authorization: `Bearer ${token}` } });
+  },
   
   registerUser( user ) {
       return $.ajax({
@@ -24,13 +28,6 @@ export default {
         },
         method: "post",
       });
-
-      // return axios.post('/api/auth/signup', {
-      //   name: user.name,
-      //   email: user.email,
-      //   password: user.password,
-      //   "password_confirmation": user.password_confirmation
-      // });
   },
 
 

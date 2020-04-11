@@ -1,6 +1,7 @@
 import store from '../store';
 
 var authMixin = {
+
   methods: {
     login() {
       var buttonSubmit = $("button[type=submit]")
@@ -58,12 +59,11 @@ var authMixin = {
     },
     logout() {
       var vm = this;   
-      const loadingComponent = vm.$buefy.loading.open({
-          container: true ? null : vm.$refs.element.$el
-      })
-      axios.get('/api/auth/logout', { headers: { Authorization: `Bearer ${localStorage.getItem('access_token')}` } }).then(function (response) {
+      $('#logout').text('...')
+      store.dispatch('auth/logout', localStorage.getItem('access_token'))
+      .then(function (response) {
         localStorage.removeItem('access_token');
-        loadingComponent.close()
+        $('#logout').text('Sair')
         vm.$buefy.toast.open({
           duration: 2500,
           message: `Você foi deslogado com sucesso.`,
