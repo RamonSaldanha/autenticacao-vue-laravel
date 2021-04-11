@@ -4,7 +4,7 @@ Esse projeto tem como objetivo criar um sistema com autenticação, que para ter
 
 ## Instalação
 
-1- insira o comando: "composer install"
+1- insira o comando: "composer install"\
 2- insira o comando: "npm install"
 3- insira o comando: "npm run watch"
 4- Fazer cópia do arquivo ".env.example" para ".env"
