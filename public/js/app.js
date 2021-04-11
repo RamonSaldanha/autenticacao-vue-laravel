@@ -69835,7 +69835,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   routes: [{
     path: '/',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./components/Pages/Welcome */ "./resources/js/components/Pages/Welcome.vue"));
+      return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ./components/Pages/Welcome */ "./resources/js/components/Pages/Welcome.vue"));
     },
     meta: {
       auth: false
@@ -69843,7 +69843,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   }, {
     path: '/login',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ./components/Pages/Login */ "./resources/js/components/Pages/Login.vue"));
+      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ./components/Pages/Login */ "./resources/js/components/Pages/Login.vue"));
     },
     meta: {
       auth: false
@@ -69851,7 +69851,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   }, {
     path: '/register',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./components/Pages/Register */ "./resources/js/components/Pages/Register.vue"));
+      return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./components/Pages/Register */ "./resources/js/components/Pages/Register.vue"));
     },
     meta: {
       auth: false
@@ -69861,7 +69861,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   {
     path: '/home',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./components/Pages/Logged */ "./resources/js/components/Pages/Logged.vue"));
+      return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ./components/Pages/Logged */ "./resources/js/components/Pages/Logged.vue"));
     },
     meta: {
       auth: true,
@@ -69870,7 +69870,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   }, {
     path: '/admin',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./components/Pages/Admin/Dashboard */ "./resources/js/components/Pages/Admin/Dashboard.vue"));
+      return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./components/Pages/Admin/Dashboard */ "./resources/js/components/Pages/Admin/Dashboard.vue"));
     },
     meta: {
       auth: true,
@@ -69879,7 +69879,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   }, {
     path: "/*",
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ./components/Pages/PageNotFound */ "./resources/js/components/Pages/PageNotFound.vue"));
+      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./components/Pages/PageNotFound */ "./resources/js/components/Pages/PageNotFound.vue"));
     },
     meta: {
       auth: false
@@ -70071,8 +70071,8 @@ var mutations = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\ramon\Desktop\pj\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\ramon\Desktop\pj\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\ramon\Desktop\documento-juridico\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\ramon\Desktop\documento-juridico\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
