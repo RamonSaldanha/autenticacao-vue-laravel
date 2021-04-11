@@ -2,6 +2,8 @@
 
 Esse projeto tem como objetivo criar um sistema com autenticação, que para ter acesso a autenticação o usuário tenha que adquirir licença pagas mensalmente.
 
+Utiliza-se Vue com Single Page Application e Buefy como framework frontend.
+
 ## Instalação
 
 1- insira o comando: "composer install"\
